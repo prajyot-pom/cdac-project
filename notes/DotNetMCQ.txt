@@ -1,0 +1,730 @@
+1.Which of the following is true for dynamic type in C#?
+a.It allows multiple time declaration of a variable.
+b.It allows compile time type checking
+c.It escapes compile time type checking  ****
+d.None of the above
+
+
+2.Which of the following statement is true?
+a.A finally block may not execute every time
+b.A return or break statement cannot exit a finally block.   *****
+c.A finally block can come before catch block.
+d.Multiple finally block is possible.
+
+3.Data type of a variable declared using var will be assigned at _______.
+a.Runtime
+b.Compile time  *****
+c.CLR time
+d.Application Initialization time.
+
+4.Func and Action are the types of ______.
+a.Utility function
+b.Delegate   *************
+c.Event
+d.Generic class
+
+
+5.C# class can inherit multiple ________
+a.Class
+b.Interface    ******
+c.Abstract class
+d.Static class
+
+6.Which of the following is true for ReadOnly variables?
+a.Value will be assigned at runtime.  ********
+b.Value will be assigned at compile time.
+c.Value will be assigned when it accessed first time
+None of the above
+
+7.What is indexer?
+a.It allows an instance of a class to be indexed like an array  ******
+b.It allows enumerator with class
+c.It creates index for instances of a class.
+d.None of the above.
+
+8.Which of the following datatype can be used with enum?
+a.Int   *******
+b.String
+c.Boolean
+d.All of the above
+
+9.Which of the following is right way of declaring an array?
+a.int[] intArray = new int[];
+b.int intArray[] = new int[5];
+c.int[] intArray = new int[5];   *******
+d.int[5] intArray = new int[];
+
+10.Struct is a _____.
+a.Reference type
+b.Value type   *****
+c.Class type
+d.String type
+
+11.What is Nullable type?
+a.It allows assignment of null to reference type.
+b.It allows assignment of null to value type.   ******
+c.It allows assignment of null to static class.
+d.None of the above.
+
+12.Which of the following standard query operator returns the unique elements from two collections?
+a.Distinct
+b.Except
+c.Intersect
+d.Union   ********************
+
+13.Third party data providers must implement ________ interface, in order to support a.LINQ.
+b.IEnumerable
+c.IQueryable   **********************
+d.ICollection
+
+14.Which of the following operators executes LINQ query immediately and gets the result?
+a.'To' operators   ***************
+b.Casting operators
+c.Grouping operators
+d.Joining operators
+
+
+15.
+var teenAgerStudents = studentList.Where(s => s.Age > 12 && s.Age < 20)
+                                        .ToList<Student>();
+
+The above query is an example of _______ syntax.
+a.Query syntax
+b.Method syntax   *****************
+c.SQL
+d.All of the above
+
+
+16.s => s.Age > 12 && s.Age < 20; is an example of _______.
+Expression tree
+LINQ query
+C# condition
+Lambda expression    *********
+
+17.OrderByDescending is NOT supported in _______.
+a.Query syntax    ******************
+b.Method syntax
+c.Lambda expression
+d.VB Method syntax.
+
+18.Which of the following is a reference type in C#?
+a.String			******
+b.Long
+c.Boolean
+d.None of the above
+
+19.var teenAgerStudent = from s in studentList
+      where s.Age > 12 && s.Age < 20
+      select s;
+      
+      The above query is an example of ________ syntax.
+a.Method syntax
+b.Query syntax  ******
+c.C#
+d.VB
+
+20.Which of the following supports LINQ queries?
+a.Object collection
+b.XML Document
+c.Entity Framework
+d.All of the above  ****
+
+21.Which of the following statement is TRUE?
+a.LINQ API is a bunch of extension methods included in System.Linq.Enumerable and b.System.Linq.Queryable class.***
+c.LINQ API is a bunch of abstract methods included in Enumerable and Queryable classes.
+d.LINQ API is bunch of queries written in C# and VB.
+
+22.A class must implement ____________ interface in order to provide querying facility using LINQ.
+a.IEnumerator or IQueryable
+b.IEnumerable or IQueryable ********
+c.Enumerable or Queryable  
+d.None of the above
+
+23.Which attibutes can be used for data validations in MVC.
+a.DataAnnotations   ***********************
+b.Fluent API
+c.DataModel
+d.HtmlHelper
+
+
+24.Which of the following view file types are supported in MVC
+a..cshtml
+b..vbhtml
+c.aspx
+d.all of the above   *******************************
+
+25.HtmlHelper class  ________.
+a.Generates html elements   ******************************
+b.Generates html view
+c. Generates html help file
+d.Generates model data
+
+26.Bundling allows ________.
+a.Loading of multiple images in single request.
+b.Loading of multiple view files in single request.
+c.Loading of caching of multiple script files.
+d. Loading of multple script files in single request.  **************************************
+
+
+27.Which of the following is a default route pattern in MVC>
+a."/{action}/{controller}/{id}"
+b."{controller}/{id}"
+c." {controller}/{action}/{id}"    *********************************
+d." {controller}/{action}"
+
+ 
+28.Which permission can not be set during Virtual direcltory in IIS
+a.Read
+b.Execute
+c.Browse
+d.Block Javascript   ******
+
+29.In which format data can be return from XML into table?
+a. DataSet     *******************
+b. Datatable 
+c. A and B 
+d. None
+
+30.Which of the followings are ActionSelectors?
+a.ActionName
+b.NonAction
+c.ActionVerbs
+d.All of the above   *******
+
+31.RedirectToAction() Method for which Status code represents?
+a. 304 
+b. 302     *********************
+c. 301 
+d. 300
+
+32.Which of the following is TRUE?
+a.Action method can be static method in a controller class.
+b.Action method can be private method in a controller class.
+c.Action method can be protected method in a controller class.
+d.Action method must be public method in a controller class.   ****
+
+33.You are globalizing an application and are compiling a list of items that need to be translated. Which items should be included on the list?
+a. Images that are used as part of the menu structure 
+b. Server error-logging messages 
+c. Button tooltips 
+d. Both A and C       ***********
+
+34. Which filter will be execute at last using ASP.Net MVC?
+a. Action filters 
+b. Authorization filters 
+c. Exception filters   *******************
+d. Response filters
+
+
+35.What is the folder location for IIS Virtual Directory
+a.<drive>:\inetpub\wwwroot   ********
+b.<drive>:\program files\Visual Studio
+c.<drive>:\windows\system
+c.<drive>:\www\iis
+
+36.Which of the following is a type of view in MVC
+a.Partial View
+b.Executable View
+c.Data View
+d.Designer View
+
+37.Which is the default http method for an action method ?
+a.HttpPost
+b.HttpGet	***************
+c.HttpPut
+d.HttpDelete
+
+38.Which of the following methods are used to render partial view
+a.Html.partial()
+b.Html.RenderPartial()
+c.Html.RenderAction()
+d.All of the above     ***************
+
+
+39.How to transfer data from controller to view ?
+a.Using model Object
+b.Using ViewBag
+c.Using ViewData
+d.All of the above   **********************
+
+40.What is action filters ?
+a.ACtion filter executes before and after action method executes
+b.Action filter executes before action method executes
+c.Action filter exectues after action method executes.
+d.Action filter executes parallel to action method.
+
+
+41.Which of the following default class is used to configure all the routes in MVC?
+a.RouteConfig   ****************
+b.FilterConfig
+c.MVCRoutes
+d.RegisterRouteConfig
+
+
+42.The model is a ______.
+a.Shape of data.   ****************
+b.Html content.
+c.collection of data
+d. Type of data
+
+
+43.Which of the following property returns all the formatters in Web API?
+a.GlobalConfiguration.Configuration.JsonFormatter
+b.Configuration.Formatters
+c.GlobalConfiguration.Formatters
+d.GlobalConfiguration.Configuration.Formatters *******************
+ 
+
+44.Which of the following is a formatter class for JSON?
+a.JsonMediaTypeFormatter  **************
+b.JsonMediaFormatter
+c.Json.Net
+d.None of the above
+
+
+45.Web API sends which of the following status code on successful execution?
+a.200   *****************
+b.201
+c.500
+d.404
+
+46.Which of the following is true?
+a.Web API can be self-host.
+b.Web API can be host in IIS.
+c.Web API can be host in any web server that supports .NET Framework.
+d.All of the above  ******************
+
+
+47.Which of the following class is used to send HTTP requests in .NET 4.5?
+a.WebClient
+b.HttpClient   *****************
+c.MessageClient
+d.None of the above
+
+
+48.Which of the following action method names are valid to handle HTTP GET request?
+a.Get
+b.GetAllStudents
+c.GetStudent
+d.all of the above   **************
+
+
+49.Web API supports which of the following protocol?
+a.TCP
+b.HTTP   **********
+c.Soap
+d.All of the above
+
+
+
+50.By default, Web API sends HTTP response with which of the following status code for all uncaught exception?
+a.404 - Not Found
+b.500 - Internal Server Error  ******************
+c.204 - No content.
+d.None of the above
+
+
+51.Web API extract the values of complex type parameters of an action method from _____ by default.
+a.HTTP Request Body   ******************
+b.HTTP Header
+c.Message Header
+d.Query String
+
+
+52.Web API controller must be derived from __________.
+a.Controller class
+b.ApiController class   ********************
+c.WebApiController class
+d.WebController class
+
+
+53.Web API supports which of the following request/response data formats by default?
+a.JSON
+b.XML
+c.BSON
+d.All of the above   ******
+
+
+54.Web API uses which of the following open-source library for JSON serialization?
+a.Json.NET   ********
+b.JsonFormatter.NET
+c.GetJson.NET
+d.None of the above
+
+55.DIP stands for __________ .
+a.Dependency Injection Principle  ******
+b.Dependency Inversion Protocol
+c.Dependency Interface Principle
+d.Dependency Inversion Principle
+
+
+56.IoC stands for ________ .
+a.Inversion of Class
+b.Invert Object Class
+c.Inversion of Control   ********
+d.Inversion of Concept
+
+57.IoC, DIP and DI are aimed to achieve ____________.
+a.Tight coupling
+b.Loose coupling    ***************
+c.Unit testing
+d.Performance
+
+
+58.IoC is a ___________ .
+a.Design Pattern
+b.Design Principle   ***********
+c.Framework
+d.None of the above
+
+59.Which of the following are IoC containers for .NET application?
+a.Unity Container
+b.Ninject
+c.StructureMap
+d.All of the above    ********************
+
+
+
+60.Which namespace is used for ASPX View Engine?
+a. System.Web.Razor 
+b. System.Web.Mvc.WebFormViewEngine   *************
+c. Both A & B 
+d. None
+
+61.Which of the following attribute can be used to perform method injection using Unity container?
+a.[DependencyInjection]
+b.[Injection]
+c.[InjectionMethod]    ************************
+d.[MethodInjection]
+
+62. What is the name of the configuration files that the App_Start folder contains?
+a. BundleConfig.cs 
+b. FilterConfig.cs 
+c. RouteConfig.cs 
+d. All of these    *************
+
+
+ 63.What is ActionResult()?
+a. It is an abstract Class   ************
+b. It is a Concrete Class 
+c. Both A and B 
+d. None
+
+
+ 64.What are the various types of filters in an ASP.NET MVC application?
+a. Authorization filters 
+b. Action filters 
+c. Result filters 
+d. All of these   ***********
+
+
+65. What Request Processing technique follows ASP.Net?
+a. Top-Down 
+b. Down-Up 
+c. Pipeline   *********************
+d. Waterfall
+
+66.ASP.NET Core applications can target which of the following?
+a..NET Core
+b..NET Framework 4.x
+c..NET Standard
+d.All of the above  ************
+
+67.ASP.NET Core supports which of the following platforms?
+a.Windows
+b.Linux
+c.Mac
+d.All of the above   ***************
+
+68. WIF enables you to create a custom token. To be able to use the token, you must create a custom token handler by overriding which of the following?
+a. SecurityToken 
+b. SecurityTokenHandler    ***********************
+c. SWTToken 
+d. Saml2SecurityTokenHandler
+
+
+
+69.Which of the following is an entry point of ASP.NET Core application?
+a.Main method of Program class   **********************
+b.Configure method of Startup class
+c.ConfigureService method of Startup class
+d.Application_start method of Global.asax
+
+
+
+70.ASP.NET Core web application uses __________ as an internal web server by default.
+a.IIS
+b.Apache
+c.Kestrel    *************************
+d.nginx
+
+71.Every command in .NET Core command line interface starts with _________.
+a.core
+b.dotnet   **********************
+c..net
+d.aspdotnet
+
+
+72.Which of the following is executed on each request in ASP.NET Core application?
+a.Startup
+b.Middlewares    **********************
+c.Main method
+d.All of the above
+
+
+73.Middlwares can be configured in ___________ method of Startup class.
+a.Configure   **************************
+b.ConfigureService
+c.Main
+d.ConfigureMiddleware
+
+74.Which of the following middleware must be installed to serve static files in ASP.NET Core application?
+a.Microsoft.AspNetCore
+b.Microsoft.AspNetCore.Static
+c.Microsoft.AspNetCore.StaticFiles    ****************
+d.Microsoft.AspNetCore.Extensions
+
+
+75.We should target which of the following for the code sharing of .NET Core application?
+a..NET Core
+b..NET Standard    ***********************
+c..NET Framework 4.x
+d.All of the above
+
+
+76.To create logs in ASP.NET Core application, we need to get _________ object from IoC container.
+a.ILogger    *****************************************
+b.IConsoleLogger
+c.LoggerFactory
+d.ILoggerProvider
+
+78.Which of the following authentication is best suited for a corporate network?
+a.Windows  **************
+b.Form
+c.User
+d.All
+
+
+ 79.______ element in web.confi file is used to run code using permission of a specific user
+a.<credential> element
+b.<authentication> element
+c.<authorization> element
+d.<identity> element  **************
+
+80.Which of the following is performance attributes of processModel ?
+a.requestQueue limit
+b.maxWorkerThreads
+c.maxIdThreads
+d.All of the above ************
+
+
+81.Which is a special subfolder within the windwos folder that stores the shared .net component
+a./bin
+b.GAC   ***************
+c.Root
+d.local
+
+82.Which object can help you maintain data across users?
+a.Application object  ***********
+b.Session object
+c.Response object
+d.Server object
+
+83.Which of the following is not the way to maintain state
+a.View State
+b.Cookies
+c.Hidden fields
+d.Request object  *********
+
+
+84.How do you get information from a form that is submitted using Post method
+a.Request.QueryString
+b.Request.Form		***********
+c.Response.write
+d.Response.writeln
+
+85.Select the mode of storing ASP.NET session 
+a.InProc
+b.StateServer
+c.SQL Server
+d.All of the above
+
+
+86.Which of the follwing asp.net object encapulates the stateof the client
+a.Session object  ******************
+b.Application object
+c.Response object 
+d.Server object
+
+88.Which of the following WCF binding does not support reliable session
+a.wsHttpBinding
+b.netTcpBinding
+c.basicHttpBinding  ****************
+d.wsDualHttpBinding
+
+
+89.Which WCF attribute is used to serialize DataContract memeber variables
+a.Serialize
+b.DataMember	*************
+c.Data
+d.None
+
+90.Which namespance is used in WCF for data Serialization
+a.System.Xml.Serialization
+b.System.Runtime.Serialization  **************
+c.System.ServiceModel
+d.None
+
+91.WCF binding supports leagacy ASMX web service
+a.WebHttpBinding
+b.BasicHttpBinding  ******************
+c.wsHttpBinding
+d.None of the above
+
+92.What attribute is used to define a WCF service class
+a.Service
+b.WCFService
+c.ServiceContract  ****************
+d.None
+
+93.Which WCF Contract is used to document error from service to client
+a.ServiceContract
+b.DataContract
+c.FaultContract  **************
+d.None
+
+94.What is the default message exchange pattern in wCF
+a.Oneway
+b.Request/Response  *************
+c.Duplex
+d.None
+
+95.The main components of WCF services are
+a.Service class, Hosting environment, start Point
+b.Service class, Hosting environment, End Point
+c.Start Point, End Point
+d.Both a, b
+
+96.What is/are the various ways/way of hosting a WCF Service ?
+a.IIS Hosting
+b.Self Hosting
+c.WAS (Windows Activation Service)
+d.All of the above  ****************
+
+97.What is the fusion of Address, Contract and Binding ?
+a.StartPoint
+b.EndPoint  ******************
+c.WCF Service
+d.None
+
+
+99.Which is not the contract define in WCF
+There are four types of Contracts in WCF-
+a. Service contracts
+b. Data contracts
+c. Fault contracts
+d. Security contracts ********************
+
+100.Which is not a valid instance mode in WCF?
+a.Per-Call
+b.Per-Session
+c.Singleton
+d.All is valid.
+
+101.Which of the following binding supports Communication with callback?
+a.wsHttpBinding
+b.wsDualHttpBinding	******
+c.Both a and b
+d.None
+
+102.Which WCF binding supports streaming
+a.basicHttp
+b.netTcp
+c.netNamed
+d.all of the above  ***********
+
+103.WCF attribute to define REST full service
+a.HttpGet
+b.WebGet	***************
+c.Rest
+d.None of the above
+
+104.Which of the endpoint element specify message encoding?
+
+a.Binding   *************
+b.Contract
+c.Message
+d.Communication
+
+105.Which tool is used to generate WCF Service Proxy
+a.Visual Studio
+b.svcutil.exe
+c.gacutil.exe
+d.ildam.exe
+
+
+106.WCF binding to supports REST based service
+a.BasicHttpBinding
+b.wsHttpBinding
+c.WebHttpBinding  ****************
+d.None of the above
+
+107.WCF supports which transport schema
+a.HTTP
+b.TCP
+c.MSMQ
+d.All of the above   ***************
+
+
+108.What is default instance mode in WCF?
+a.Per-Call
+b.Per-Session   *******
+c.Singleton
+d.Per-Request
+
+
+109.WCF attribute used to define instance mode?
+a.ServiceContract
+b.ServiceBehavior  ***************
+c.ServiceConfiguration
+d.None
+
+110.Which is not a valid instance mode in WCF
+a.Per-Call
+b.Per-Session
+c.Singleton
+d.All is valid  *************
+
+111.Which is the root element in configuration file for WCF Service declaration?
+
+a.System.Service
+b.System.ServiceModel  ***********
+c.Service
+d.None
+
+
+112.WCF Mex endpoint uses which standard WCF contract
+a.IMetaDataExchange ***************
+b.IMexEndpoint
+d.IMetaData
+e.None of the above
+
+113.Which WCF object is used to host WCF service
+a.ServiceHost  *****************
+b.Service
+c.Host
+d.None
+
+
+114.WCFDataAnnotation is used to automatic all validate memeber of ____.
+
+a.ServiceContract
+b.MessageContract
+c.DataContract     ***************
+d.FaultContract
+
+
+
+
+
+

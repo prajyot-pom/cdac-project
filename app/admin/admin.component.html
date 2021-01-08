@@ -1,0 +1,36 @@
+<h3 style="text-align: center; color:blueviolet; font-weight: bold">Welcome {{fname}}</h3>
+<div class="col-md-5"></div>
+<div class="col-md-7" style="width: 100%;">
+
+    <ul class="nav navbar-nav">
+            <li class="active">
+                <a routerLink="/book">Book List</a>
+            </li>
+            <li>
+                <a routerLink="/user">Member List</a>
+            </li>
+            <li>
+                <a routerLink="/addBook">Add New Book</a>
+            </li>
+            <li>
+                <a routerLink="/registerAdmin">Add New Admin Member</a>
+            </li>
+            <li>
+                <a routerLink="/registerAdmin">View Orders</a>
+            </li>
+            
+            <li>
+                <a routerLink="/editUser">Edit Profile</a>
+            </li>
+            <form class="navbar-form navbar-left" action="/action_page.php">
+                <div class="input-group">
+                  <input [(ngModel)]="title" type="text" class="form-control" placeholder="Search" name="search book by name">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" routerLink="/searchBookAdmin" type="button">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+        </ul>
+    </div>

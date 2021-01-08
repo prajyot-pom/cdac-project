@@ -1,0 +1,46 @@
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr style="text-align: center; background-color: aquamarine">
+                <th><img src="assets/image/readersclub.jpg" style="width: 150px; height: 100px;"></th>
+                <th style="text-align: left">
+                    <h1 style="font-weight: bolder">READERS' CLUB.com</h1>
+                    <h4 style="font-style: italic; font-weight: bold">...A Book Worm’s Paradise </h4>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                    
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a style="font-size: 18px" routerLink="/home"><i class="glyphicon glyphicon-home"></i>&nbsp;Home</a>
+                    </li>
+
+                    <li>
+                        <a style="font-size: 18px" routerLink="/register"><i class="glyphicon glyphicon-user"></i>Register</a>
+                    </li>
+                    <li class="active" *ngIf="!service.IsLoggedIn()">
+                        <a style="font-size: 18px" routerLink="/login"><i class="glyphicon glyphicon-log-in"></i>&nbsp;Login</a>
+                    </li>
+                    <li>
+                        <a style="font-size: 18px" routerLink="/contact"><i class="glyphicon glyphicon-earphone"></i>Contact Us</a>
+                    </li>
+                    <li>
+                        <a style="font-size: 18px" routerLink="/about">About Us</a>
+                    </li>
+                    <li  *ngIf="service.IsLoggedIn()">
+                        <button style="float: right; font-size: 17px" type="button" class="btn btn-primary" (click)="signout()"><i class="glyphicon glyphicon-log-out"></i>&nbsp;Logout</button>
+                        
+                    </li>
+                </ul>
+            </tr>
+            <tr>
+                <div class="container">
+                    <router-outlet></router-outlet>
+                </div>
+            </tr>
+        </tbody>
+    </table>
+</div>

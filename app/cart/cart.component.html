@@ -1,0 +1,46 @@
+
+
+<div class="col-md-10">
+
+    <h3 style="text-align: center; color: blueviolet; font-weight: bold">Your Cart</h3>
+  <div class="container">
+  
+      <div class="table-fixed" > 
+        <table class="table table-hover">
+          <thead>
+            <tr style="background-color: rgb(170, 169, 169)" >
+              <th>Item Id</th>
+              <th>Book Id</th>
+              <th>Book Title</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Amount</th>
+              <th>Option</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let c of cart">
+              <td>{{c.i_id}}</td>
+              <td>{{c.book_id}}</td>
+              <td>{{c.book_name}}</td>
+              <td>{{c.price}}</td>
+              <td>{{c.qty}}</td>
+              <td>{{c.amount}}</td>
+              <td>
+              <button type="button" (click)="delete(c.i_id)"class="btn btn-danger">Drop</button>
+              </td>               
+            </tr>
+            <tr>
+              <td>
+                <button type="button" routerLink="/payment" class="btn btn-primary">Proceed To Pay</button>
+                <button style="float: right" type="button" (click)="back()" class="btn btn-primary">Back</button>
+              </td>
+          </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      </div>
+  
+  </div>
+

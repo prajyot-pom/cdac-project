@@ -1,0 +1,53 @@
+
+
+<div class="col-md-10">
+
+        <h3 style="text-align: center; color: blueviolet; font-weight: bold">Your Orders</h3>
+      <div class="container">
+      
+          <div class="table-fixed" > 
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Order Id</th>
+                  <th>Order Date</th>
+                  <th>Qty</th>
+                  <th>Amount</th>
+                  <th>Books</th>
+                  <th>Options</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- <tr *ngFor="let b of books">
+                  <td>{{b.b_id}}</td>
+                  <td>{{b.title}}</td>
+                  <td>{{b.author}}</td>
+                  <td>{{b.publication}}</td>
+                  <td>{{b.type}}</td>
+                  <td>{{b.isbn}}</td>
+                  <td>{{b.price}}</td>
+                  <td>{{b.image}}</td>
+                  <td>{{b.count}}</td>
+                  <td>
+                      <input type="button" class="btn btn-success" value="Issue">
+                  </td>
+                  
+                  
+                </tr> -->
+      
+                <tr>
+                    <td>
+                        <button type="button" (click)="Payment()"class="btn btn-primary">Proceed To Payment</button>
+                    </td>
+                </tr>
+                <tr>
+                      <td>
+                            <button type="button" (click)="Back()" class="btn btn-warning">Back</button>
+                      </td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+          </div>
+      
+      </div>

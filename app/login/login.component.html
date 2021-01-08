@@ -1,0 +1,51 @@
+
+<div class="col-md-2"></div>
+<div  class="col-md-5">
+        <tbody  background="assets/image/bg.jpg">
+        <div class="col-md-2"></div>
+        <div class="col-md-10">
+            <div class="container" >
+                <form #myForm = "ngForm" (ngSubmit)="SignIn(myForm)" style="width: 50%;">
+                    <legend style="font-size: 40px;font-weight: bold; text-align: center; color:aliceblue">Log In</legend>
+                    <span style="font-weight: bold; font-size: 20px" class="label label-danger">{{message}}</span>
+                    <br>
+                    <div class="form-group" style="background-image: url()">
+                        <label style="font-size: 20px;color: aliceblue" for="email">Email</label>
+                        <input ngModel style="border: none; border-bottom: 2px solid rebeccapurple" type="text" class="form-control" name="email" id="email" placeholder="Enter Email" >
+                    </div>
+                <br>
+                    <div class="form-group">
+                        <label style="font-size: 20px;color: aliceblue" for="password">Password</label>
+                        <input ngModel style="border: none; border-bottom: 2px solid rebeccapurple" type="password" class="form-control" name="password" id="password" placeholder="Enter Password" >
+                    </div>
+                    <button style="font-size: 20px" type="submit" class="btn btn-success" >Log In</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button style="font-size: 20px" type="button" class="btn btn-danger" (click)="Cancel()" >Cancel</button>
+                    <button type="button" class="btn btn-primary" (click)="Register()" style="float: right;font-size: 20px" >Signup</button>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                  
+                    
+                    
+                </form>
+            </div>
+        </div>
+        </tbody>
+</div>
+<div class="col-md-5"></div>

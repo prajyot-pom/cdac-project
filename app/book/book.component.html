@@ -1,0 +1,61 @@
+
+
+<div class="col-md-10">
+
+  <h3 style="text-align: center; color: blueviolet; font-weight: bold">Book List</h3>
+<div class="container">
+
+    <div class="table-fixed" > 
+      <table class="table table-hover">
+        <thead>
+          <tr style="background-color: rgb(170, 169, 169)" >
+            <th>Id</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publication</th>
+            <th>Type</th>
+            <th>ISBN</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Available Qty.</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let b of books">
+            <td>{{b.b_id}}</td>
+            <td>{{b.title}}</td>
+            <td>{{b.author}}</td>
+            <td>{{b.publication}}</td>
+            <td>{{b.type}}</td>
+            <td>{{b.isbn}}</td>
+            <td>{{b.price}}</td>
+            <td>{{b.image}}</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{b.count}}</td>
+            <!-- <td>
+                <input type="button" class="btn btn-success" value="Issue">
+            </td> -->
+            
+            <td>
+            <button type="button" (click)="delete(b.b_id)"class="btn btn-danger">Delete</button>
+            </td>
+            <td>
+                <button type="button" routerLink="/editBook/{{b.b_id}}" class="btn btn-warning">Update</button>
+            </td> 
+          </tr>
+
+          <tr>
+            <td>
+                  <button type="button" (click)="addBook()" class="btn btn-primary">Add a New Book</button>
+                  <button style="float: left" type="button" (click)="back()" class="btn btn-primary">Back</button>
+            </td>
+        </tr>
+          
+          
+        </tbody>
+      </table>
+    </div>
+    </div>
+
+</div>

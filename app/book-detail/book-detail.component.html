@@ -1,0 +1,32 @@
+<h2 style="text-align: center; color: blueviolet">Description</h2>
+<div class="col-md-4"></div>
+<div class="col-md-6">
+    <div class="container">
+        
+        <h3>Title:&nbsp;&nbsp;{{title}}</h3>
+        <br>
+        <h3>Author Name:&nbsp;&nbsp;{{author}}</h3>
+        <br>
+        <h3>Publication:&nbsp;&nbsp;{{publication}}</h3>
+        <br>
+        <h3>Summary:</h3>
+        &nbsp;&nbsp;&nbsp;<h4>A very nice book famous among readers of diffferent agegroup.</h4>
+        <br>
+        <h3>Price:&nbsp;&nbsp;{{price}}</h3>
+        <br>
+        <h3>ISBN:&nbsp;&nbsp;{{isbn}}</h3>
+        <br>
+        <h3>Type:&nbsp;&nbsp;{{type}}</h3>
+        <br>
+        <h3>Available Copies:&nbsp;&nbsp;{{count}}</h3>
+        <br>
+        <div class="form-group">
+        <label for="">Qty</label>
+        <input [(ngModel)]="qty" type="number" class="form-control">
+        </div>
+       <div >
+            <button style="font-size: 16px;" type="button" (click)="Order()" class="btn btn-warning">Add to Cart</button>&nbsp;&nbsp;
+            &nbsp;&nbsp;<button style="font-size: 16px;" type="button" (click)="Previous()" class="btn btn-primary">Previous Page</button>
+       </div>
+    </div>
+</div>

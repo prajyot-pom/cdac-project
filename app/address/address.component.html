@@ -1,0 +1,56 @@
+
+
+<div class="col-md-10">
+
+        <h2 style="text-align: center; color: blueviolet; font-weight: bold">Your Address</h2>
+      <div class="container">
+      
+          <div class="table-fixed" > 
+            <table class="table table-hover">
+              <thead>
+                <tr style="background-color: rgb(170, 169, 169)" >
+                  <th>Id</th>
+                  <th>House No</th>
+                  <th>Street</th>
+                  <th>City</th>
+                  <th>Pin</th>
+                  <th>State</th>
+                  <th>Country</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{addId}}</td>
+                  <td>{{houseNo}}</td>
+                  <td>{{street}}</td>
+                  <td>{{city}}</td>
+                  <td>{{pincode}}</td>
+                  <td>{{state}}</td>
+                  <td>{{country}}</td>
+                  <!-- <td>
+                      <input type="button" class="btn btn-success" value="Issue">
+                  </td> -->
+                  
+                  <!-- <td>
+                  <button type="button" (click)="delete(a.a_id)"class="btn btn-danger">Delete</button>
+                  </td> -->
+                  <td>
+                      <button type="button" (click)="Edit()" class="btn btn-primary">Edit</button>
+                  </td> 
+                </tr>
+                <tr>
+                  <td>
+                        <!-- <button type="button" routerLink="/addAddress" class="btn btn-primary">Add a New Address</button> -->
+                        <button style="float: right" type="button" (click)="back()" class="btn btn-primary">Back</button>
+                  </td>
+              </tr>
+                
+              </tbody>
+            </table>
+          </div>
+          </div>
+      
+      </div>
